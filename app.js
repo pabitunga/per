@@ -1,5 +1,8 @@
 // Faculty Jobs • Neo - Main Application Logic
 // This is a demo implementation with simulated Firebase functionality
+import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
+import { app } from '../lib/firebase'; // Change the path if needed.
+const auth = getAuth(app);
 
 class FacultyJobsApp {
     constructor() {
